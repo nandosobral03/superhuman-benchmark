@@ -21,9 +21,6 @@ def check_word_status(start_button_x, start_button_y):
         # Convert to PIL Image for OCR
         screen_pil = Image.frombytes('RGB', screen.size, screen.rgb)
 
-        # save image
-        screen_pil.save("screen.png")
-
         # Use pytesseract to detect text
         import pytesseract
         word = pytesseract.image_to_string(screen_pil).strip()
@@ -72,13 +69,13 @@ def main():
             words_processed += 1
             pyautogui.moveTo(seen_button_x, button_y)
             pyautogui.click()
-            console.print(f"[bold green]{word} SEEN ({words_processed}/300)[/bold green]")
+            console.print(f"[bold green]{word} SEEN ({words_processed}/400)[/bold green]")
         else:
             seen_words.add(word)
             words_processed += 1
             pyautogui.moveTo(new_button_x, button_y)
             pyautogui.click()
-            console.print(f"[bold red]{word} NEW ({words_processed}/300)[/bold red]")
+            console.print(f"[bold red]{word} NEW ({words_processed}/400)[/bold red]")
 
         time.sleep(0.1)  # Small delay to prevent excessive CPU usage
 

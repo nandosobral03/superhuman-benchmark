@@ -1,0 +1,8 @@
+pyautogui
+mss
+rich
+numpy
+keyboard
+scipy
+Pillow
+pytesseract

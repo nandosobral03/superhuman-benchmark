@@ -31,8 +31,7 @@ def check_number(start_button_x, start_button_y):
 
 
         # Save image for debugging
-        debug_filename = "number_capture.png"
-        screen_pil.save(debug_filename)
+        # screen_pil.save(debug_filename)
 
         # Use pytesseract to detect text with multiple configurations
         configs = [

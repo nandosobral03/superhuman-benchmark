@@ -13,6 +13,8 @@ def print_menu():
         "\n4. ", ("Aim Trainer", "green"),
         "\n5. ", ("Number Memory", "green"),
         "\n6. ", ("Verbal Memory", "green"),
+        "\n7. ", ("Typing Test", "green"),
+        "\n8. ", ("Visual Memory", "green"),
         "\n0. ", ("Exit", "red")
     )
 
@@ -26,6 +28,8 @@ if __name__ == "__main__":
     from aim_trainer_test import main as aim_trainer_main
     from number_memory import main as number_memory_main
     from verbal_memory import main as verbal_memory_main
+    from typing_test import main as typing_test_main
+    from visual_memory import main as visual_memory_main
 
     console.print("[bold blue]Welcome to the Automation Tools[/bold blue]")
 
@@ -50,6 +54,12 @@ if __name__ == "__main__":
         elif choice == "6":
             console.print("[yellow]Starting Verbal Memory...[/yellow]")
             verbal_memory_main()
+        elif choice == "7":
+            console.print("[yellow]Starting Typing Test...[/yellow]")
+            typing_test_main()
+        elif choice == "8":
+            console.print("[yellow]Starting Visual Memory...[/yellow]")
+            visual_memory_main()
         elif choice == "0":
             console.print("[bold red]Goodbye![/bold red]")
             break

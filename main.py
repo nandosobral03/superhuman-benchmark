@@ -31,7 +31,7 @@ if __name__ == "__main__":
     from typing_test import main as typing_test_main
     from visual_memory import main as visual_memory_main
 
-    console.print("[bold blue]Welcome to the Automation Tools[/bold blue]")
+    console.print("[bold blue]Welcome to the Superhuman Benchmark[/bold blue]")
 
     while True:
         choice = print_menu()
